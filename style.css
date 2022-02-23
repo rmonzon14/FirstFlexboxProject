@@ -135,3 +135,14 @@ ol
     box-shadow: white 5px 5px 10px;
 }
 
+/* Style quote section */
+.quote-container
+{
+    background:rgb(27, 27, 27);
+    background: linear-gradient(10deg, rgb(0, 0, 0) 0%, rgb(185, 108, 125)100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
