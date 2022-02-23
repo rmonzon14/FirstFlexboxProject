@@ -16,7 +16,7 @@ body
 /* Styling the header */
 .container-header
 {
-  padding: 0 30px 25px;
+  padding: 0 30px 40px;
   color: white;
   background: black;
   background: linear-gradient(-90deg, rgba(129,67,67,1) 0%, rgba(10,54,62,1) 100%);
@@ -34,6 +34,13 @@ body
     margin-bottom: 40px;
 }
 
+.name
+{
+    color: rgb(213, 213, 247);
+    font-size: 3.5em;
+    margin: 0;
+}
+
 ol
 {
     list-style-type: none;
@@ -41,7 +48,7 @@ ol
     gap: 15px;
 }
 
-.header-link
+.header-link, .contact-info
 {
     color: lavender;
     text-decoration: none;
@@ -95,7 +102,7 @@ ol
 {
     padding: 20px 0px 10px;
     background: black;
-    background: linear-gradient(rgb(27, 27, 27) 0%, rgb(138, 69, 89) 40%,rgba(10,54,62,1) 100%);
+    background: linear-gradient(rgb(27, 27, 27) 0%, rgb(138, 69, 89) 70%,rgba(10,54,62,1) 100%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -128,18 +135,42 @@ ol
     font-family:fantasy;
 }
 
-.products-images
+.info img
 {
     width: 400px;
     margin-bottom: 15px;
-    box-shadow: white 5px 5px 10px;
+}
+
+.jordan1
+{
+    box-shadow: rgb(10, 75, 252) 5px 5px 10px;
+}
+
+.timberland
+{
+    box-shadow: rgb(255, 217, 90) 5px 5px 10px;
+}
+
+.vans
+{
+    box-shadow: rgb(255, 42, 42) 5px 5px 10px;
+}
+
+.airforce1
+{
+    box-shadow: rgb(255, 255, 255) 5px 5px 10px;
+}
+
+.converse
+{
+    box-shadow: rgb(87, 65, 65) 5px 5px 10px;
 }
 
 /* Style the quote section */
 .quote-container
 {
     background:rgb(27, 27, 27);
-    background: linear-gradient(10deg, rgba(10,54,62,1) 0%, rgb(185, 108, 125)100%);
+    background: linear-gradient(90deg, rgba(10,54,62,1) 0%, rgb(185, 108, 125)100%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -149,23 +180,60 @@ ol
 /* Style the signup section  */
 .signup-container
 {
-    background: black;
+    background: linear-gradient(rgb(219, 188, 188)0%, rgb(162, 162, 170) 100%);
     color: white;
+    padding: 60px 100px;
 }
 
-.signup-section
+.modal
 {
+    height: 200px;
+    background: rgb(0, 0, 0);
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 90px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.signup-button
+{
+    width: 100px;
+    height: 40px;
+    background-color: lavender;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.text-advertisement
+{
+    font-weight: 700;
+    font-size: 1.3em;
 }
 
 /* Style the footer section */
 .footer
 {
+    background: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 45px;
+}
+
+.contact-info::after
+{
+    content: '';
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 0%;
+    display: block;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.contact-info:hover::after
+{
+    width: 100%;
 }
