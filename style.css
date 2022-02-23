@@ -1,0 +1,85 @@
+body
+{
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling the header */
+.container-header
+{
+  padding: 0 30px 25px;
+  color: white;
+  background: black;
+  background: linear-gradient(-90deg, rgba(129,67,67,1) 0%, rgba(10,54,62,1) 100%);
+}
+
+.top-header, .header-info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header
+{
+    margin-bottom: 40px;
+}
+
+ol
+{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header-link
+{
+    color: lavender;
+    text-decoration: none;
+    position: relative;
+}
+
+.header-link::after
+{
+    content: '';
+    background-color: rgb(255, 0, 0);
+    height: 3px;
+    width: 0%;
+    display: block;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.header-link:hover::after
+{
+    width: 100%;
+}
+
+.buy-button
+{
+    background: none;
+    color: rgb(231, 109, 109);
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: rgb(230, 137, 137) 2px 2px 8px;
+}
+
+.shoes-logo
+{
+    width: 50px;
+    height: 50px;
+    margin-left: -15px;
+    transform:rotateY(180deg)
+}
+
+.header-image
+{
+    width: 300px;
+    padding-left: 15px;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
