@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital@1&family=Roboto:wght@300&display=swap');
 
+*
+{
+    box-sizing: border-box;
+}
+
 body
 {
     margin: 0;
@@ -88,6 +93,7 @@ ol
 /* Styling the products section */
 .products-container
 {
+    padding: 20px 0px 10px;
     background: black;
     background: linear-gradient(rgb(27, 27, 27) 0%, rgb(138, 69, 89) 40%, black 100%);
     color: white;
@@ -109,6 +115,8 @@ ol
 .products-title
 {
     font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+    margin: 0;
 }
 
 .shoes-name
@@ -119,5 +127,6 @@ ol
 .products-images
 {
     margin-bottom: 15px;
+    box-shadow: white 5px 5px 10px;
 }
 
