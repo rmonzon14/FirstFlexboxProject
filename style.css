@@ -83,3 +83,34 @@ ol
     border-radius: 5px;
 }
 
+/* Styling the products section */
+.products-container
+{
+    background: black;
+    background: linear-gradient(rgb(27, 27, 27) 0%, rgb(138, 69, 89) 40%, black 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-info
+{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.shoes-name
+{
+    text-align: center;
+}
+
+.products-images
+{
+    margin-bottom: 15px;
+}
+
