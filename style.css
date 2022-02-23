@@ -121,11 +121,16 @@ ol
 
 .shoes-name
 {
+    opacity: 80%;
     text-align: center;
+    color: lavender;
+    font-size: 25px;
+    font-family:fantasy;
 }
 
 .products-images
 {
+    width: 400px;
     margin-bottom: 15px;
     box-shadow: white 5px 5px 10px;
 }
