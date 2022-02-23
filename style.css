@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital@1&family=Roboto:wght@300&display=swap');
+
 body
 {
     margin: 0;
@@ -102,6 +104,11 @@ ol
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+
+.products-title
+{
+    font-family: 'Bebas Neue', cursive;
 }
 
 .shoes-name
